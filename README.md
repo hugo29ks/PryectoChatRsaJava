@@ -1,3 +1,4 @@
 # PryectoChatRsaJava
-Código de una chat cliente servidor con codificación RSA en Java 
+Código de una chat cliente servidor con codificación RSA en Java.
+
 Tiene la función principal que inicia el cliente o el servidor creando un objeto de la clase JClient o JServer en consecuencia. La clase JServer y la clase JClient inician dos subprocesos cada uno, a saber, el sender y el receiver. El sender utiliza "Finalizar Chat" para finalizar el chat de manera adecuada. Además, JClient y JServer crean un objeto de clase RSA para cifrado, descifrado y emisión de la clave pública al cliente o servidor. RSA-> En nuestra versión del Algoritmo RSA, creamos 2 primos de longitud 2048 bits cada uno (digamos P y Q) y los multiplicamos para obtener N Tomamos E en 2 10^ 16 + 1 Luego calculamos phi como (P-1) (Q - 1). Entonces D se calcula como modInverso (E, phi) Siempre que ciframos el mensaje m, tomamos (m ^ E) mod N como el mensaje encriptado siempre que desencripte el mensaje m (cifrado), tomamos (m ^ D) mod N para obtener el mensaje original.
